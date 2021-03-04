@@ -2,6 +2,8 @@
   <main class="prose mx-auto">
     <h1>Hello 🍍 Pinia!</h1>
 
+    <p><nuxt-link to="/">Back Home</nuxt-link></p>
+
     <h2>Hello {{ user.name }}</h2>
 
     <form @submit.prevent="addItemToCart">
@@ -40,6 +42,10 @@ import { useUserStore } from '~/store'
 import { useCartStore } from '~/store'
 
 export default defineComponent({
+  fetch({ pinia }) {
+    const user = useUserStore(pinia)
+    console.log('user is', user.name)
+  },
   setup() {
     const user = useUserStore()
     const cart = useCartStore()

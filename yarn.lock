@@ -5710,9 +5710,9 @@ pify@^5.0.0:
   resolved "https://registry.yarnpkg.com/pify/-/pify-5.0.0.tgz#1f5eca3f5e87ebec28cc6d54a0e4aaf00acc127f"
   integrity sha512-eW/gHNMlxdSP6dmG6uJip6FXN0EQBwm2clYYd8Wul42Cwu/DK8HEftzsapcNdYe2MfLiIwZqsDk2RDEsTE79hA==
 
-"pinia@file:../pinia/pinia-v0.1.0.tgz":
+pinia@/Users/posva/pinia/pinia-v0.1.0.tgz:
   version "0.1.0"
-  resolved "file:../pinia/pinia-v0.1.0.tgz#118679ae8718995c418a7446110d36d3d663f402"
+  resolved "/Users/posva/pinia/pinia-v0.1.0.tgz#01a94c586a2bb05af2d1f7305c59a31c80aeed8d"
 
 pkg-dir@^3.0.0:
   version "3.0.0"
