@@ -27,7 +27,8 @@ export default {
     // https://go.nuxtjs.dev/typescript
     '@nuxt/typescript-build',
     '@nuxtjs/composition-api',
-    'pinia/nuxt',
+    // set `disableVuex` to false if you need to use Vuex alongside Pinia
+    ['pinia/nuxt', { disableVuex: true }],
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules

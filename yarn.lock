@@ -5849,14 +5849,10 @@ pify@^5.0.0:
   resolved "https://registry.yarnpkg.com/pify/-/pify-5.0.0.tgz#1f5eca3f5e87ebec28cc6d54a0e4aaf00acc127f"
   integrity sha512-eW/gHNMlxdSP6dmG6uJip6FXN0EQBwm2clYYd8Wul42Cwu/DK8HEftzsapcNdYe2MfLiIwZqsDk2RDEsTE79hA==
 
-pinia@/Users/posva/pinia-v1/pinia-v0.2.1.tgz:
-  version "0.2.1"
-  resolved "/Users/posva/pinia-v1/pinia-v0.2.1.tgz#24c443c9cb192edbca5c1e4b6726ef32ee896287"
-
-pinia@^0.2.1:
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/pinia/-/pinia-0.2.1.tgz#aed7370466af2c1211c71217483a781efa505ecc"
-  integrity sha512-CVATnAcU1O/V+bOscekC8EHxR1plp5Hk4KAge9QZ0l5DVJW2Q0Wzt4NjKWdDX0IRTDMcKvRk8OIcWh9ChD8lmg==
+pinia@^0.2.2:
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/pinia/-/pinia-0.2.2.tgz#dbe8ff951f5472b97f2879653c6d117c751a3785"
+  integrity sha512-PYoIDJpSa3LHiyoFzA4zqkTaGIeMillIf9V6U/9DLRJylWv13eyTieqaf7D/B4Oq6RflTL6WB1XeNSgy2H2/6g==
 
 pkg-dir@^3.0.0:
   version "3.0.0"
