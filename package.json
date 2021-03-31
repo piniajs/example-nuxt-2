@@ -9,15 +9,15 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "@nuxt/typescript-runtime": "^2.0.1",
-    "@nuxtjs/composition-api": "^0.21.0",
+    "@nuxt/typescript-runtime": "^2.1.0",
+    "@nuxtjs/composition-api": "^0.22.4",
     "core-js": "^3.8.3",
-    "nuxt": "^2.14.12",
-    "pinia": "/Users/posva/pinia/pinia-v0.1.0.tgz"
+    "nuxt": "^2.15.3",
+    "pinia": "/Users/posva/pinia-v1/pinia-v0.2.1.tgz"
   },
   "devDependencies": {
-    "@nuxt/types": "^2.14.12",
-    "@nuxt/typescript-build": "^2.0.4",
+    "@nuxt/types": "^2.15.3",
+    "@nuxt/typescript-build": "^2.1.0",
     "eslint-config-prettier": "^7.2.0",
     "eslint-plugin-prettier": "^3.3.1",
     "prettier": "^2.2.1"

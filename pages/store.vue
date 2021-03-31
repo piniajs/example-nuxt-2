@@ -64,7 +64,7 @@ export default defineComponent({
 
     function clearCart() {
       if (window.confirm('Are you sure you want to clear the cart?')) {
-        cart.rawItems = []
+        cart.$patch({ rawItems: [] })
       }
     }
 
