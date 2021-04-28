@@ -1,4 +1,5 @@
 export default {
+  target: 'static',
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'pinia-example-nuxt',
@@ -26,7 +27,7 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/typescript
     '@nuxt/typescript-build',
-    '@nuxtjs/composition-api',
+    '@nuxtjs/composition-api/module',
     // set `disableVuex` to false if you need to use Vuex alongside Pinia
     ['pinia/nuxt', { disableVuex: true }],
   ],
@@ -36,6 +37,9 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-    transpile: ['pinia'],
+    // this is optionally needed if any library you use adds it themselves.
+    // Pinia will add itself to transpile if it sees `@vue/composition-api` in
+    // this array, so you don't even need to add it.
+    transpile: ['@vue/composition-api'],
   },
 }
