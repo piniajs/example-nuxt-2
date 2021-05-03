@@ -7,8 +7,8 @@ export const useCartStore = defineStore({
     rawItems: [] as string[],
   }),
   getters: {
-    items() {
-      return this.rawItems.reduce((items, item) => {
+    items(state) {
+      return state.rawItems.reduce((items, item) => {
         const existingItem = items.find((it) => it.name === item)
 
         if (!existingItem) {
