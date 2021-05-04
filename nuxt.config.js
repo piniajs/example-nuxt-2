@@ -36,10 +36,5 @@ export default {
   modules: [],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {
-    // this is optionally needed if any library you use adds it themselves.
-    // Pinia will add itself to transpile if it sees `@vue/composition-api` in
-    // this array, so you don't even need to add it.
-    transpile: ['@vue/composition-api'],
-  },
+  build: {},
 }
