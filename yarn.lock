@@ -5910,10 +5910,10 @@ pify@^5.0.0:
   resolved "https://registry.yarnpkg.com/pify/-/pify-5.0.0.tgz#1f5eca3f5e87ebec28cc6d54a0e4aaf00acc127f"
   integrity sha512-eW/gHNMlxdSP6dmG6uJip6FXN0EQBwm2clYYd8Wul42Cwu/DK8HEftzsapcNdYe2MfLiIwZqsDk2RDEsTE79hA==
 
-pinia@^0.4.0:
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/pinia/-/pinia-0.4.0.tgz#cabd4fed477f6b4815baeb5801762080c0c57536"
-  integrity sha512-7jvxM+QHpUel0pRyktwYnJfaa30ZU/n4Q8j7KuVUy5MvpIXa3Bw/Oms4hMs2hYodrGgqNMoRMxgor4h92BfPCQ==
+pinia@^0.4.1:
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/pinia/-/pinia-0.4.1.tgz#9584ac508aa509288dc97d60a6c61335d5249045"
+  integrity sha512-fL/q7jTTByZDpiiHlgClEfISEwfU4Xa1HNB3wPi9d833P6PUjaaFqPmmeElOq/3dTwboRx5REYeENQ8FiZs5AA==
 
 pkg-dir@^3.0.0:
   version "3.0.0"
