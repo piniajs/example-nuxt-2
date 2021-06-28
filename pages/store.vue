@@ -6,6 +6,8 @@
 
     <h2>Hello {{ user.name }}</h2>
 
+    <pre>{{ user.$state }}</pre>
+
     <form @submit.prevent="addItemToCart">
       <input type="text" class="text-black px-2" v-model="itemName" />
       <br />

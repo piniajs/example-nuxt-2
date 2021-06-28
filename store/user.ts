@@ -1,5 +1,6 @@
 // @ts-check
 import { defineStore } from 'pinia'
+import { ref } from '@nuxtjs/composition-api'
 
 /**
  * Simulate a login
@@ -16,6 +17,7 @@ export const useUserStore = defineStore({
     name: 'Eduardo',
     /** @type {boolean} */
     isAdmin: true,
+    stuff: ref('hey'),
   }),
 
   actions: {
@@ -37,6 +39,7 @@ export const useUserStore = defineStore({
       this.$patch({
         name: user,
         ...userData,
+        stuff: 'hey',
       })
     },
   },
