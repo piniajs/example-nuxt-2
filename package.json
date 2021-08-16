@@ -10,13 +10,13 @@
   },
   "dependencies": {
     "@nuxt/typescript-runtime": "^2.1.0",
-    "@nuxtjs/composition-api": "^0.24.0",
-    "core-js": "^3.13.0",
-    "nuxt": "^2.15.6",
-    "pinia": "^0.5.1"
+    "@nuxtjs/composition-api": "^0.26.0",
+    "core-js": "^3.16.1",
+    "nuxt": "^2.15.8",
+    "pinia": "^0.5.3"
   },
   "devDependencies": {
-    "@nuxt/types": "^2.15.6",
+    "@nuxt/types": "^2.15.8",
     "@nuxt/typescript-build": "^2.1.0",
     "prettier": "^2.3.0"
   }
