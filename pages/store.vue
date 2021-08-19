@@ -44,8 +44,8 @@ import { useUserStore } from '~/store'
 import { useCartStore } from '~/store'
 
 export default defineComponent({
-  fetch({ pinia }) {
-    const user = useUserStore(pinia)
+  fetch({ $pinia }) {
+    const user = useUserStore($pinia)
     console.log('user is', user.name)
   },
   setup() {
