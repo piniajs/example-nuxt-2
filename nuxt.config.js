@@ -32,9 +32,10 @@ export default {
     ['@pinia/nuxt', { disableVuex: true }],
   ],
 
-  // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [],
-
-  // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {},
+  build: {
+    transpile: [
+      // necessary for nuxt bridge
+      'pinia',
+    ],
+  },
 }
