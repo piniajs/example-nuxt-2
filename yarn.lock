@@ -1357,10 +1357,10 @@
     mustache "^2.3.0"
     stack-trace "0.0.10"
 
-"@pinia/nuxt@^0.0.6":
-  version "0.0.6"
-  resolved "https://registry.yarnpkg.com/@pinia/nuxt/-/nuxt-0.0.6.tgz#0fee6ba5980dd136c57d43f0711de6b3f981d461"
-  integrity sha512-U9b1kSkMPMjrYBxQge+baEsN5PU1CUE+wPPLDr5AQ32Er3FfbCe+898k+3rmKyck1jgxiRAFO1j5qufpDqXacw==
+"@pinia/nuxt@^0.0.7":
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/@pinia/nuxt/-/nuxt-0.0.7.tgz#839afc5ca4c4fee1a3555cb49eff223a88fc6481"
+  integrity sha512-TYtfUNsC2noqvZRSByZixP63hseVD2clVcd8qNeN2CKN6qTWS2sCiXHNTnk1908Fvbf0tI4ejCxWhqItYbYRdg==
   dependencies:
     "@nuxt/kit" "npm:@nuxt/kit-edge@latest"
     upath "^2.0.1"
@@ -5942,9 +5942,9 @@ pify@^5.0.0:
   integrity sha512-eW/gHNMlxdSP6dmG6uJip6FXN0EQBwm2clYYd8Wul42Cwu/DK8HEftzsapcNdYe2MfLiIwZqsDk2RDEsTE79hA==
 
 pinia@^2.0.0-rc.5:
-  version "2.0.0-rc.13"
-  resolved "https://registry.yarnpkg.com/pinia/-/pinia-2.0.0-rc.13.tgz#b9f858da278130469ed8dd89f8348de54f216541"
-  integrity sha512-NLOqK+tCIx1a4qZByqLZVdAK7ilTxkG6Opmj1O8hTjxpu4VSO2+eL2pPcO3JE/4ifZ6FBx87X2DU7NTY36z7Bw==
+  version "2.0.0-rc.14"
+  resolved "https://registry.yarnpkg.com/pinia/-/pinia-2.0.0-rc.14.tgz#c5c004c60b56806f465cae1bacce3922cf3163ac"
+  integrity sha512-vM8vYMsFdFDK1ND6j4+f7TC4hKB8moAjyn9HcHKqdOf1bHN4fL5g9Mz/8t8U0pEqnUwR2AU8yxD0gr+uU18x3g==
   dependencies:
     "@vue/devtools-api" "^6.0.0-beta.19"
     vue-demi "*"
