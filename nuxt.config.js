@@ -35,7 +35,7 @@ export default {
   build: {
     transpile: [
       // necessary for nuxt bridge
-      'pinia',
+      // 'pinia',
     ],
   },
 }
