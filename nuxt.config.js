@@ -31,11 +31,4 @@ export default {
     // set `disableVuex` to false if you need to use Vuex alongside Pinia
     ['@pinia/nuxt', { disableVuex: true }],
   ],
-
-  build: {
-    transpile: [
-      // necessary for nuxt bridge
-      // 'pinia',
-    ],
-  },
 }
