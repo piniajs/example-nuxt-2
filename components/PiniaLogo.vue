@@ -196,60 +196,71 @@
   </svg>
 </template>
 
-<script setup lang="ts">
-import { onMounted, onUnmounted, ref } from 'vue-demi'
+<script lang="ts">
+import { onMounted, onUnmounted, ref, defineComponent } from 'vue-demi'
 
-const blinking = ref<'open' | 'closed'>('open')
-const talking = ref<'open' | 'closed'>('closed')
+export default defineComponent({
+  setup() {
+    const blinking = ref<'open' | 'closed'>('open')
+    const talking = ref<'open' | 'closed'>('closed')
 
 
-const blinkTimer = 100
-const talkRate = 120
+    const blinkTimer = 100
+    const talkRate = 120
 
-onMounted(() => {
-  let timerId = setInterval(() => {
-    let blinkState = 0
-    function blinkHandler() {
-      blinkState++
+    onMounted(() => {
+      let timerId = setInterval(() => {
+        let blinkState = 0
+        function blinkHandler() {
+          blinkState++
 
-      if (blinkState % 2) {
-        blinking.value = 'closed'
-        setTimeout(blinkHandler, blinkTimer * 1.7)
-      } else if (blinkState < 4) {
-        blinking.value = 'open'
-        setTimeout(blinkHandler, blinkTimer)
-      } else {
-        blinking.value = 'open'
-      }
+          if (blinkState % 2) {
+            blinking.value = 'closed'
+            setTimeout(blinkHandler, blinkTimer * 1.7)
+          } else if (blinkState < 4) {
+            blinking.value = 'open'
+            setTimeout(blinkHandler, blinkTimer)
+          } else {
+            blinking.value = 'open'
+          }
+        }
+        setTimeout(blinkHandler, 0)
+      }, 10000)
+
+      onUnmounted(() => {
+        clearInterval(timerId)
+      })
+
+      let talkingTimer = setInterval(() => {
+        let blinkState = 0
+        function blinkHandler() {
+          blinkState++
+
+          if (blinkState % 2) {
+            // talking.value = 'closed'
+            setTimeout(blinkHandler, talkRate)
+          } else if (blinkState < 10) {
+            // talking.value = 'open'
+            setTimeout(blinkHandler, talkRate)
+          } else {
+            // talking.value = 'closed'
+          }
+        }
+        setTimeout(blinkHandler, 0)
+      }, 5000)
+      onUnmounted(() => {
+        clearInterval(talkingTimer)
+      })
+    })
+
+    return {
+      blinking,
+      talking
     }
-    setTimeout(blinkHandler, 0)
-  }, 10000)
 
-  onUnmounted(() => {
-    clearInterval(timerId)
-  })
-
-  let talkingTimer = setInterval(() => {
-    let blinkState = 0
-    function blinkHandler() {
-      blinkState++
-
-      if (blinkState % 2) {
-        // talking.value = 'closed'
-        setTimeout(blinkHandler, talkRate)
-      } else if (blinkState < 10) {
-        // talking.value = 'open'
-        setTimeout(blinkHandler, talkRate)
-      } else {
-        // talking.value = 'closed'
-      }
-    }
-    setTimeout(blinkHandler, 0)
-  }, 5000)
-  onUnmounted(() => {
-    clearInterval(talkingTimer)
-  })
+  }
 })
+
 </script>
 
 <style>
