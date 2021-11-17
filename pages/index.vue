@@ -1,46 +1,95 @@
 <template>
-  <div class="container">
-    <div>
-      <Logo />
-      <nuxt-link to="/store">Pinia!</nuxt-link>
-      <nuxt-link to="/about">About</nuxt-link>
+  <div>
+    <div style="margin: 1rem 0;">
+      <PiniaLogo />
     </div>
+
+    <h2>Hello {{ user.name }}</h2>
+
+    <form @submit.prevent="addItemToCart" data-testid="add-items">
+      <input type="text" v-model="itemName" />
+      <button>Add</button>
+    </form>
+
+    <form @submit.prevent="buy">
+      <ul data-testid="items">
+        <li v-for="item in cart.items" :key="item.name">
+          {{ item.name }} ({{ item.amount }})
+          <button
+            @click="cart.removeItem(item.name)"
+            type="button"
+          >X</button>
+        </li>
+      </ul>
+
+      <button :disabled="!user.name">Buy</button>
+      <button
+        :disabled="!cart.items.length"
+        @click="clearCart"
+        type="button"
+        data-testid="clear"
+      >Clear the cart</button>
+    </form>
   </div>
 </template>
 
 <script lang="ts">
-export default {}
+import PiniaLogo from '~/components/PiniaLogo.vue'
+
+import { defineComponent, ref } from 'vue-demi'
+import { useUserStore } from '~/stores/user'
+import { useCartStore } from '~/stores/cart'
+
+export default defineComponent({
+  components: { PiniaLogo },
+
+  setup() {
+    const user = useUserStore()
+    const cart = useCartStore()
+
+    const itemName = ref('')
+
+    function addItemToCart() {
+      if (!itemName.value) return
+      cart.addItem(itemName.value)
+      itemName.value = ''
+    }
+
+    function clearCart() {
+      if (window.confirm('Are you sure you want to clear the cart?')) {
+        cart.rawItems = []
+      }
+    }
+
+    async function buy() {
+      const n = await cart.purchaseItems()
+
+      console.log(`Bought ${n} items`)
+
+      cart.rawItems = []
+    }
+
+    return {
+      itemName,
+      addItemToCart,
+      cart,
+
+      user,
+      buy,
+      clearCart,
+    }
+  },
+})
 </script>
 
-<style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+<style scoped>
+img {
+  width: 200px;
 }
 
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
+button,
+input {
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 </style>

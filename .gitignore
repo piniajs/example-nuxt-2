@@ -90,3 +90,5 @@ sw.*
 *.swp
 .yalc
 yalc.lock
+cypress/videos
+cypress/screenshots
