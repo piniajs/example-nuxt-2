@@ -16,7 +16,7 @@
     "@pinia/nuxt": "^0.1.8",
     "core-js": "^3.20.3",
     "nuxt": "^2.15.8",
-    "pinia": "^2.0.9"
+    "pinia": "^2.0.11"
   },
   "devDependencies": {
     "@nuxt/types": "^2.15.8",
