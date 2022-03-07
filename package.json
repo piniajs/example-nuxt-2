@@ -21,7 +21,7 @@
   "devDependencies": {
     "@nuxt/types": "^2.15.8",
     "@nuxt/typescript-build": "^2.1.0",
-    "cypress": "^9.5.0",
+    "cypress": "^9.5.1",
     "prettier": "^2.5.1"
   }
 }
