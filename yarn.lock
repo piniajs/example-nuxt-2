@@ -1453,10 +1453,10 @@
     mustache "^2.3.0"
     stack-trace "0.0.10"
 
-"@pinia/nuxt@^0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@pinia/nuxt/-/nuxt-0.2.0.tgz#913cdcf3e6bde823582ed3db77f9ef595b256012"
-  integrity sha512-x66oTnrT0Mke8Qagye8/LFj3CV25j+y9klKWIN1WLOTXjwqfzL3a2+SPcd5LKXjb5bVG8DKDh85BRcfcqG/IgA==
+"@pinia/nuxt@^0.2.1":
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@pinia/nuxt/-/nuxt-0.2.1.tgz#256fdbf9b97332c77785fc00a00115e5228bb817"
+  integrity sha512-XPsuClG2ag/zSdSDqU8FRkTxwWKVZTYD6TVTzjMon3l9QZKC9YvW+jdZWasQilLCnU+jWpmhx41YpfIoPSwMbg==
   dependencies:
     vue-demi "*"
 
@@ -6503,10 +6503,10 @@ pify@^5.0.0:
   resolved "https://registry.yarnpkg.com/pify/-/pify-5.0.0.tgz#1f5eca3f5e87ebec28cc6d54a0e4aaf00acc127f"
   integrity sha512-eW/gHNMlxdSP6dmG6uJip6FXN0EQBwm2clYYd8Wul42Cwu/DK8HEftzsapcNdYe2MfLiIwZqsDk2RDEsTE79hA==
 
-pinia@^2.0.15:
-  version "2.0.15"
-  resolved "https://registry.yarnpkg.com/pinia/-/pinia-2.0.15.tgz#74700e33c208c380360c61e9c637a5848c1cc24f"
-  integrity sha512-qkIvXdGWMbnc3UG3l8rn9SV4nE2H4I2R/exZcdn/0pDzjaKQmMUsBXlIurfKu62VJsjETkqss46NP/c88NnjYQ==
+pinia@^2.0.16:
+  version "2.0.16"
+  resolved "https://registry.yarnpkg.com/pinia/-/pinia-2.0.16.tgz#0105db595f5f792e17c04692e36807d8ea62f5cc"
+  integrity sha512-9/LMVO+/epny1NBfC77vnps4g3JRezxhhoF1xLUk8mZkUIxVnwfEAIRiAX8mYBTD/KCwZqnDMqXc8w3eU0FQGg==
   dependencies:
     "@vue/devtools-api" "^6.1.4"
     vue-demi "*"
