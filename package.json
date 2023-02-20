@@ -23,5 +23,11 @@
     "@nuxt/typescript-build": "^2.1.0",
     "cypress": "^10.3.0",
     "prettier": "^2.7.1"
+  },
+  "volta": {
+    "node": "16.19.1"
+  },
+  "engines": {
+    "node": "16.19.1"
   }
 }
