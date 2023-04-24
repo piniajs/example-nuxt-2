@@ -1,4 +1,4 @@
 {
-  "installDependencies": true,
-  "startCommand": "npm run dev"
+  "installDependencies": false,
+  "startCommand": "yarn && yarn run dev"
 }
