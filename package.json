@@ -22,7 +22,7 @@
     "@nuxt/types": "^2.15.8",
     "@nuxt/typescript-build": "^2.1.0",
     "cypress": "^10.3.0",
-    "prettier": "^2.7.1"
+    "prettier": "^3.3.3"
   },
   "volta": {
     "node": "16.14.2"
